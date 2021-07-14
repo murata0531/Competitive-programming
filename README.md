@@ -1,4 +1,4 @@
-# docker-python
+# competitive-programming
 
 コンテナ立ち上げ
 
