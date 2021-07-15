@@ -19,14 +19,23 @@ for i in range(N):
 
 print(list)
 
-#複数行を配列にまとめる
+#入力回数と各行複数（空白区切り）の入力値の標準入力の取得
 
-number = int(input())
-result = 0
-for i in range(number):
-    line = input()
-    array = line.split()
-    # 試しに足し込んでみましょう
-    result += int(array[0] + int(array[1]))
+#行毎にリストに取得する
+N = int(input())
+list_x = []
+for i in range(N):
+    array = list(map(int, input().split()))
+    list_x.append(array)
+print(list_x)
 
-print(result)
+#列毎にリストに取得する
+N = int(input())
+list_x = []
+list_y = []
+for i in range(N):
+    x, y = map(int,input().split())
+    list_x.append(x)
+    list_y.append(y)
+print(list_x)
+print(list_y)
