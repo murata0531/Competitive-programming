@@ -1,3 +1,5 @@
+import sys
+
 #2つの数字だけ標準入力を行う
 a,b=map(int,input().split())
 
@@ -16,3 +18,15 @@ for i in range(N):
     list.append(int(input()))
 
 print(list)
+
+#複数行を配列にまとめる
+
+number = int(input())
+result = 0
+for i in range(number):
+    line = input()
+    array = line.split()
+    # 試しに足し込んでみましょう
+    result += int(array[0] + int(array[1]))
+
+print(result)
