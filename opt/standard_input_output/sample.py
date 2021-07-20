@@ -1,5 +1,7 @@
 import sys
 
+#2つの文字だけ標準入力を行う
+a,b = input().split()
 #2つの数字だけ標準入力を行う
 a,b=map(int,input().split())
 
