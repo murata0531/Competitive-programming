@@ -1,9 +1,13 @@
+import sys
 import numpy as np
 import pandas as pd
 
 # メイン関数
 def main():
-    data = pd.read_csv('sample.csv')
+
+    args = sys.argv
+    # data = pd.read_csv('sample.csv')
+    data = pd.read_csv(args[1])
     # 使用する列を抽出する
     x = data[['値']]
     # リストに変換
