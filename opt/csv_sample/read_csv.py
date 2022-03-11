@@ -2,12 +2,8 @@ import sys
 import numpy as np
 import pandas as pd
 
-# メイン関数
-def main():
+def get_max_prefecture(data):
 
-    args = sys.argv
-    # data = pd.read_csv('sample.csv')
-    data = pd.read_csv(args[1])
     # 使用する列を抽出する
     x = data[['値1']]
     # リストに変換
@@ -24,6 +20,14 @@ def main():
     argmax = np.argmax(x)
     prefecture = data[['都道府県']].to_numpy().tolist()
     print(prefecture[argmax])
+
+# メイン関数
+def main():
+
+    args = sys.argv
+    # data = pd.read_csv('sample.csv')
+    data = pd.read_csv(args[1])
+    get_max_prefecture(data)
 
 if __name__ == "__main__":
     main()
