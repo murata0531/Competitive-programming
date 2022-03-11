@@ -2,6 +2,7 @@ import sys
 import numpy as np
 import pandas as pd
 
+# 最大値をもつ都道府県を出力する関数
 def get_max_prefecture(data):
 
     # 使用する列を抽出する
@@ -27,6 +28,7 @@ def main():
     args = sys.argv
     # data = pd.read_csv('sample.csv')
     data = pd.read_csv(args[1])
+    # 最大値をもつ都道府県を出力する関数を呼び出す
     get_max_prefecture(data)
 
 if __name__ == "__main__":
