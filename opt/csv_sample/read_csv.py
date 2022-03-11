@@ -39,9 +39,20 @@ def get_row_aggregate(data):
     print(row_mean)
 
 # メイン関数
+# コマンドライン引数: args[1]->ファイル名, args[2]->呼び出す関数
 def main():
 
     args = sys.argv
+
+    # コマンドライン引数に与える項目が少ないと各項目の入力を促す
+    # コマンドライン引数に与える項目が多いとエラー
+    if len(args) < 3:
+        print("コマンドライン引数には「実行する関数名」と「ファイル名」を指定する必要があります")
+        sys.exit()
+    elif len(args) > 3:
+        print("入力が多すぎます")
+        sys.exit()
+
     # data = pd.read_csv('sample.csv')
     data = pd.read_csv(args[1])
     # 最大値をもつ都道府県を出力する関数を呼び出す
