@@ -1,7 +1,7 @@
-都道府県,オブジェクト,値
-青森,apple,120 
-山形,cherry,50 
-栃木,strawberry,90 
-岡山,peach,350 
-愛媛,orange,100 
-沖縄,pineapple,200
+都道府県,オブジェクト,値1,値2
+青森,apple,120,120
+山形,cherry,50,50
+栃木,strawberry,90,90
+岡山,peach,350,350
+愛媛,orange,100,100
+沖縄,pineapple,200,200
