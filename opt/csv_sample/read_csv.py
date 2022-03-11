@@ -32,9 +32,11 @@ def get_row_aggregate(data):
     # 表示して確認する
     print(x)
     # 行ごとの合計
-    print(np.sum(x,axis=1))
+    row_sum = np.sum(x,axis=1)
+    print(row_sum)
     # 行ごとの平均
-    print(np.mean(x,axis=1))
+    row_mean = np.mean(x,axis=1)
+    print(row_mean)
 
 # メイン関数
 def main():
