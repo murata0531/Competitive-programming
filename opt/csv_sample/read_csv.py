@@ -9,7 +9,7 @@ def main():
     # data = pd.read_csv('sample.csv')
     data = pd.read_csv(args[1])
     # 使用する列を抽出する
-    x = data[['値']]
+    x = data[['値1']]
     # リストに変換
     x = x.to_numpy().tolist()
     # 表示して確認する
