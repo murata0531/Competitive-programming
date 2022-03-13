@@ -53,13 +53,19 @@ def main():
         print("入力が多すぎます")
         sys.exit()
 
-    try :
+    try:
         # data = pd.read_csv('sample.csv')
         data = pd.read_csv(args[1])
-        # 最大値をもつ都道府県を出力する関数を呼び出す
-        get_max_prefecture(data)
-        # 行方向の集計を行う関数を呼び出す
-        get_row_aggregate(data)
+
+        if args[2] == 'max':
+            # 最大値をもつ都道府県を出力する関数を呼び出す
+            get_max_prefecture(data)
+        elif args[2] == 'aggregate':
+            # 行方向の集計を行う関数を呼び出す
+            get_row_aggregate(data)
+        else:
+            print('第二引数には「max」か「aggregate」を指定してください')
+            sys.exit()
 
     except FileNotFoundError:
         print('指定されたファイルが存在しません')
