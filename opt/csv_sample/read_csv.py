@@ -38,6 +38,8 @@ def get_row_aggregate(data):
     row_mean = np.mean(x,axis=1)
     print(row_mean)
 
+    # 値1,値2の平均値が一番大きい都道府県を取得
+
 # メイン関数
 # コマンドライン引数: args[1]->ファイル名, args[2]->呼び出す関数
 def main():
