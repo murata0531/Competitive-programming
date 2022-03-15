@@ -39,6 +39,12 @@ def get_row_aggregate(data):
     print(row_mean)
 
     # 値1,値2の平均値が一番大きい都道府県を取得
+    argmax = np.max(row_mean)
+    print(argmax)
+    argmax = np.argmax(row_mean)
+    print(argmax)
+    prefecture = data[['都道府県']].to_numpy().tolist()
+    print(prefecture[argmax])
 
 # メイン関数
 # コマンドライン引数: args[1]->ファイル名, args[2]->呼び出す関数
