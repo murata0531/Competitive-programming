@@ -50,6 +50,7 @@ def get_row_aggregate(data):
 # コマンドライン引数: args[1]->ファイル名, args[2]->呼び出す関数
 def main():
 
+    # コマンドライン引数を取得
     args = sys.argv
 
     # コマンドライン引数に与える項目が少ないと各項目の入力を促す
